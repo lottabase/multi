@@ -66,11 +66,13 @@ class List extends React.Component {
     };
 
     return contacts.map((node, index) => {
+	if (typeof(node.contacts) !== undefined){
       return (
         <Item key={node.id} name={node.name}>
           {children(node.contacts)}
         </Item>
       );
+	}
     });
   }
 

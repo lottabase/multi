@@ -45,8 +45,8 @@
 }
 
 .accordion__body--hidden {
-    display: none;
-    opacity: 0;
+    display: block;
+    opacity: 0.8;
     animation: fadein 0.35s ease-in;
 }
 

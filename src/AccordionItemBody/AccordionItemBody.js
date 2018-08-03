@@ -21,7 +21,7 @@ const AccordionItemBody = (props: AccordionItemBodyProps) => {
         accordion,
         ...rest
     } = props;
-  
+  if (expanded){
     return (
         <div
             id={`accordion__body-${uuid}`}
@@ -32,8 +32,11 @@ const AccordionItemBody = (props: AccordionItemBodyProps) => {
             aria-labelledby={`accordion__title-${uuid}`}
             role={accordion ? 'tabpanel' : null}
             {...rest}
-        />
+        >
+	</div>
     );
+  }
+	return null;
 };
 
 export default AccordionItemBody;
