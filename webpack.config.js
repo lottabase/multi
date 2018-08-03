@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = (env, options) => ({
     mode: options.mode,
     devtool: 'source-map',
-    entry: path.resolve(__dirname, 'demo/js/demo.js'),
+    entry: path.resolve(__dirname, 'app/js/app.js'),
     output: {
         path: path.resolve(__dirname, 'pages'),
         filename:
@@ -37,11 +37,11 @@ module.exports = (env, options) => ({
             ? new webpack.HotModuleReplacementPlugin()
             : () => {},
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'demo/index.html'),
+            template: path.resolve(__dirname, 'app/index.html'),
         }),
     ],
 
     devServer: {
-        contentBase: './demo',
+        contentBase: './app',
     },
 });
