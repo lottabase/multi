@@ -1,8 +1,4 @@
-/**
-* ----------------------------------------------
-* Demo styles
-* ----------------------------------------------
-**/
+
 .u-position-absolute {
     position: absolute;
 }
@@ -12,7 +8,7 @@
 }
 
 .accordion {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 2px;
 }
 
@@ -20,12 +16,12 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.accordion__item--has-icon {
+.accordion__item-i-has-icon {
     position: relative;
 }
 
 .accordion__title {
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -35,18 +31,18 @@
 }
 
 .accordion__title:hover {
-    background-color: #ddd;
+    background-color: lightblue;;
 }
 
 .accordion__body {
-    padding: 20px;
+    padding: 0 20px;
     display: block;
     animation: fadein 0.35s ease-in;
 }
 
 .accordion__body--hidden {
-    display: block;
-    opacity: 0.8;
+    display: none;
+    opacity: 0.5;
     animation: fadein 0.35s ease-in;
 }
 

@@ -35,8 +35,9 @@ const AccordionItemBody = (props: AccordionItemBodyProps) => {
         >
 	</div>
     );
+  } else {
+	return false;
   }
-	return null;
 };
 
 export default AccordionItemBody;
