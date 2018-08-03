@@ -19,9 +19,18 @@ class AccordionItemTitle extends Component<
     AccordionItemTitleState,
 > {
     static accordionElementName = 'AccordionItemTitle';
-
+    constructor(props){
+        super(props);
+        this.state = {
+            expanded : false
+        }
+    }
     handleClick = () => {
         const { uuid, expanded, setExpanded } = this.props;
+        this.setState({
+            expanded:expanded
+        });
+        console.log(this.state.expanded);
 
         setExpanded(uuid, !expanded);
     };
