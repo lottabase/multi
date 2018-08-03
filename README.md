@@ -310,3 +310,5 @@ npm publish
 | Chrome        | Desktop   | latest  |       |
 | Firefox       | Desktop   | latest  |       |
 | Safari        | OSX       | latest  |       |
+#   m u l t i  
+ 
