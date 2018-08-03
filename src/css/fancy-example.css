@@ -13,7 +13,7 @@
 }
 
 .accordion__item + .accordion__item {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(250, 250,  250 , 0.1);
 }
 
 .accordion__item-i-has-icon {
